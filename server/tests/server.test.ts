@@ -6,7 +6,6 @@ import * as expect from "expect";
 
 import { app } from "./../server";
 import { Todo } from "./../models/todo";
-import { User } from "./../models/user";
 
 const todos = [{
     text: 'First test todo'
