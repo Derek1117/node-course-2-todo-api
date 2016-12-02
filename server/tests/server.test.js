@@ -91,4 +91,37 @@ describe('GET /todos/:id', () => {
             .end(done);
     });
 });
+describe('DELETE /todos/:id', () => {
+    it('should remove a todo', (done) => {
+        var hexId = todos[1]._id.toHexString();
+        request(server_1.app)
+            .delete(`/todos/${hexId}`)
+            .expect(200)
+            .expect((res) => {
+            expect(res.body.todo._id).toBe(hexId);
+        })
+            .end((err, res) => {
+            if (err) {
+                return done(err);
+            }
+            todo_1.Todo.findById(hexId).then((todo) => {
+                expect(todo).toNotExist();
+                done();
+            }).catch((e) => done(e));
+        });
+    });
+    it('should retrun 404 if todo not found', (done) => {
+        let id = new mongodb_1.ObjectID().toHexString();
+        request(server_1.app)
+            .delete(`/todos/${id}`)
+            .expect(404)
+            .end(done);
+    });
+    it('should retrun 404 for non-object ids', (done) => {
+        request(server_1.app)
+            .delete(`/todos/aaa`)
+            .expect(404)
+            .end(done);
+    });
+});
 //# sourceMappingURL=server.test.js.map
