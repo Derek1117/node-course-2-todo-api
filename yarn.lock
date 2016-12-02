@@ -25,6 +25,10 @@
     "@types/express-serve-static-core" "*"
     "@types/serve-static" "*"
 
+"@types/lodash@^4.14.41":
+  version "4.14.41"
+  resolved "http://registry.npm.taobao.org/@types/lodash/download/@types/lodash-4.14.41.tgz#6f65b0453778d482dc11fc11601c5c7bc98f04d0"
+
 "@types/mime@*":
   version "0.0.29"
   resolved "http://registry.npm.taobao.org/@types/mime/download/@types/mime-0.0.29.tgz#fbcfd330573b912ef59eeee14602bface630754b"
@@ -1105,7 +1109,7 @@ lodash.restparam@^3.0.0:
   version "3.6.1"
   resolved "http://registry.npm.taobao.org/lodash.restparam/download/lodash.restparam-3.6.1.tgz#936a4e309ef330a7645ed4145986c85ae5b20805"
 
-lodash@^4.14.0:
+lodash@^4.14.0, lodash@^4.17.2:
   version "4.17.2"
   resolved "http://registry.npm.taobao.org/lodash/download/lodash-4.17.2.tgz#34a3055babe04ce42467b607d700072c7ff6bf42"
 
