@@ -2,6 +2,7 @@
 /**
  * Created by derek1117 on 1/12/16.
  */
+require('./../server/config/config');
 const express = require('express');
 const bodyParser = require('body-parser');
 const _ = require("lodash");
@@ -10,7 +11,7 @@ const todo_1 = require('./models/todo');
 const mongodb_1 = require('mongodb');
 var app = express();
 exports.app = app;
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 app.use(bodyParser.json());
 app.post('/todos', (req, res) => {
     var todo = new todo_1.Todo({

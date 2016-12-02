@@ -1,6 +1,8 @@
 /**
  * Created by derek1117 on 1/12/16.
  */
+require('./../server/config/config');
+
 import * as express from 'express';
 import * as bodyParser from 'body-parser';
 import * as _ from "lodash";
@@ -11,7 +13,7 @@ import {User} from'./models/user';
 import {ObjectID} from 'mongodb';
 
 var app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 
 app.use(bodyParser.json());
 
