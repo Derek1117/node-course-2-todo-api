@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 var { mongoose } = require('./db/mongoose');
 const todo_1 = require('./models/todo');
 var app = express();
+exports.app = app;
 app.use(bodyParser.json());
 app.post('/todos', (req, res) => {
     var todo = new todo_1.Todo({
