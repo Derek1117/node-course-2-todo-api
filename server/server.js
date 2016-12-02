@@ -17,15 +17,15 @@ app.post('/todos', (req, res) => {
     });
     todo.save().then((doc) => {
         res.send(doc);
-    }, (e) => {
-        res.status(400).send(e);
+    }).catch((e) => {
+        return res.status(400).send();
     });
 });
 app.get('/todos', (req, res) => {
     todo_1.Todo.find().then((todos) => {
         res.send({ todos });
-    }, (e) => {
-        res.status(400).send(e);
+    }).catch((e) => {
+        return res.status(400).send();
     });
 });
 app.get('/todos/:id', (req, res) => {
@@ -37,11 +37,24 @@ app.get('/todos/:id', (req, res) => {
     todo_1.Todo.findById(id).then((todo) => {
         if (!todo) {
             res.status(404).send();
-            return;
         }
         res.send({ todo });
-    }, (e) => {
-        res.status(400).send();
+    }).catch((e) => {
+        return res.status(400).send();
+    });
+});
+app.delete('/todos/:id', (req, res) => {
+    var id = req.params.id;
+    if (!mongodb_1.ObjectID.isValid(id)) {
+        return res.status(404).send('Invalid Id');
+    }
+    todo_1.Todo.findByIdAndRemove(id).then((todo) => {
+        if (!todo) {
+            res.status(404).send();
+        }
+        res.send({ todo });
+    }).catch((e) => {
+        return res.status(400).send();
     });
 });
 app.listen(port, () => {
