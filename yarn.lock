@@ -8,6 +8,10 @@
   dependencies:
     "@types/express" "*"
 
+"@types/crypto-js@^3.1.32":
+  version "3.1.32"
+  resolved "http://registry.npm.taobao.org/@types/crypto-js/download/@types/crypto-js-3.1.32.tgz#e2f3003d19a1a500d1b7eba5d4ea0d1d77b9bbd5"
+
 "@types/expect@^1.13.31":
   version "1.13.31"
   resolved "http://registry.npm.taobao.org/@types/expect/download/@types/expect-1.13.31.tgz#3290a74f6ee1dce8a77923fbd1f17d9aa25f5246"
@@ -24,6 +28,12 @@
   dependencies:
     "@types/express-serve-static-core" "*"
     "@types/serve-static" "*"
+
+"@types/jsonwebtoken@^7.1.33":
+  version "7.1.33"
+  resolved "http://registry.npm.taobao.org/@types/jsonwebtoken/download/@types/jsonwebtoken-7.1.33.tgz#e2fab98787b53c04d252471c747f1ba22a5965d7"
+  dependencies:
+    "@types/node" "*"
 
 "@types/lodash@^4.14.41":
   version "4.14.41"
@@ -72,6 +82,10 @@
   resolved "http://registry.npm.taobao.org/@types/supertest/download/@types/supertest-2.0.0.tgz#4687deaff4950b63e4611536d6fd44665ee11bb7"
   dependencies:
     "@types/superagent" "*"
+
+"@types/validator@^5.7.35":
+  version "5.7.35"
+  resolved "http://registry.npm.taobao.org/@types/validator/download/@types/validator-5.7.35.tgz#2f5708d9e561440302a16a6a4d779eb93ee95e3e"
 
 abbrev@1:
   version "1.0.9"
@@ -174,6 +188,10 @@ balanced-match@^0.4.1:
   version "0.4.2"
   resolved "http://registry.npm.taobao.org/balanced-match/download/balanced-match-0.4.2.tgz#cb3f3e3c732dc0f01ee70b403f302e61d7709838"
 
+base64url@2.0.0, base64url@^2.0.0:
+  version "2.0.0"
+  resolved "http://registry.npm.taobao.org/base64url/download/base64url-2.0.0.tgz#eac16e03ea1438eff9423d69baa36262ed1f70bb"
+
 bcrypt-pbkdf@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/bcrypt-pbkdf/download/bcrypt-pbkdf-1.0.0.tgz#3ca76b85241c7170bf7d9703e7b9aa74630040d4"
@@ -237,6 +255,10 @@ browser-stdout@1.3.0:
 bson@~0.5.4, bson@~0.5.6, bson@~0.5.7:
   version "0.5.7"
   resolved "http://registry.npm.taobao.org/bson/download/bson-0.5.7.tgz#0d11fe0936c1fee029e11f7063f5d0ab2422ea3e"
+
+buffer-equal-constant-time@1.0.1:
+  version "1.0.1"
+  resolved "http://registry.npm.taobao.org/buffer-equal-constant-time/download/buffer-equal-constant-time-1.0.1.tgz#f8e71132f7ffe6e01a5c9697a4c6f3e48d5cc819"
 
 buffer-shims@^1.0.0:
   version "1.0.0"
@@ -346,6 +368,10 @@ cryptiles@2.x.x:
   dependencies:
     boom "2.x.x"
 
+crypto-js@^3.1.8:
+  version "3.1.8"
+  resolved "http://registry.npm.taobao.org/crypto-js/download/crypto-js-3.1.8.tgz#715f070bf6014f2ae992a98b3929258b713f08d5"
+
 dashdash@^1.12.0:
   version "1.14.1"
   resolved "http://registry.npm.taobao.org/dashdash/download/dashdash-1.14.1.tgz#853cfa0f7cbe2fed5de20326b8dd581035f6e2f0"
@@ -407,6 +433,13 @@ ecc-jsbn@~0.1.1:
   resolved "http://registry.npm.taobao.org/ecc-jsbn/download/ecc-jsbn-0.1.1.tgz#0fc73a9ed5f0d53c38193398523ef7e543777505"
   dependencies:
     jsbn "~0.1.0"
+
+ecdsa-sig-formatter@1.0.9:
+  version "1.0.9"
+  resolved "http://registry.npm.taobao.org/ecdsa-sig-formatter/download/ecdsa-sig-formatter-1.0.9.tgz#4bc926274ec3b5abb5016e7e1d60921ac262b2a1"
+  dependencies:
+    base64url "^2.0.0"
+    safe-buffer "^5.0.1"
 
 ee-first@1.1.1:
   version "1.1.1"
@@ -971,6 +1004,10 @@ isarray@1.0.0, isarray@~1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/isarray/download/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
 
+isemail@1.x.x:
+  version "1.2.0"
+  resolved "http://registry.npm.taobao.org/isemail/download/isemail-1.2.0.tgz#be03df8cc3e29de4d2c5df6501263f1fa4595e9a"
+
 isobject@^2.0.0:
   version "2.1.0"
   resolved "http://registry.npm.taobao.org/isobject/download/isobject-2.1.0.tgz#f065561096a3f1da2ef46272f815c840d87e0c89"
@@ -986,6 +1023,15 @@ jodid25519@^1.0.0:
   resolved "http://registry.npm.taobao.org/jodid25519/download/jodid25519-1.0.2.tgz#06d4912255093419477d425633606e0e90782967"
   dependencies:
     jsbn "~0.1.0"
+
+joi@^6.10.1:
+  version "6.10.1"
+  resolved "http://registry.npm.taobao.org/joi/download/joi-6.10.1.tgz#4d50c318079122000fe5f16af1ff8e1917b77e06"
+  dependencies:
+    hoek "2.x.x"
+    isemail "1.x.x"
+    moment "2.x.x"
+    topo "1.x.x"
 
 jsbn@~0.1.0:
   version "0.1.0"
@@ -1007,6 +1053,16 @@ jsonpointer@^4.0.0:
   version "4.0.0"
   resolved "http://registry.npm.taobao.org/jsonpointer/download/jsonpointer-4.0.0.tgz#6661e161d2fc445f19f98430231343722e1fcbd5"
 
+jsonwebtoken@^7.1.9:
+  version "7.1.9"
+  resolved "http://registry.npm.taobao.org/jsonwebtoken/download/jsonwebtoken-7.1.9.tgz#847804e5258bec5a9499a8dc4a5e7a3bae08d58a"
+  dependencies:
+    joi "^6.10.1"
+    jws "^3.1.3"
+    lodash.once "^4.0.0"
+    ms "^0.7.1"
+    xtend "^4.0.1"
+
 jsprim@^1.2.2:
   version "1.3.1"
   resolved "http://registry.npm.taobao.org/jsprim/download/jsprim-1.3.1.tgz#2a7256f70412a29ee3670aaca625994c4dcff252"
@@ -1014,6 +1070,23 @@ jsprim@^1.2.2:
     extsprintf "1.0.2"
     json-schema "0.2.3"
     verror "1.3.6"
+
+jwa@^1.1.4:
+  version "1.1.5"
+  resolved "http://registry.npm.taobao.org/jwa/download/jwa-1.1.5.tgz#a0552ce0220742cd52e153774a32905c30e756e5"
+  dependencies:
+    base64url "2.0.0"
+    buffer-equal-constant-time "1.0.1"
+    ecdsa-sig-formatter "1.0.9"
+    safe-buffer "^5.0.1"
+
+jws@^3.1.3:
+  version "3.1.4"
+  resolved "http://registry.npm.taobao.org/jws/download/jws-3.1.4.tgz#f9e8b9338e8a847277d6444b1464f61880e050a2"
+  dependencies:
+    base64url "^2.0.0"
+    jwa "^1.1.4"
+    safe-buffer "^5.0.1"
 
 kareem@1.1.3:
   version "1.1.3"
@@ -1104,6 +1177,10 @@ lodash.keys@^3.0.0:
     lodash._getnative "^3.0.0"
     lodash.isarguments "^3.0.0"
     lodash.isarray "^3.0.0"
+
+lodash.once@^4.0.0:
+  version "4.1.1"
+  resolved "http://registry.npm.taobao.org/lodash.once/download/lodash.once-4.1.1.tgz#0dd3971213c7c56df880977d504c88fb471a97ac"
 
 lodash.restparam@^3.0.0:
   version "3.6.1"
@@ -1201,6 +1278,10 @@ mocha@^3.2.0:
     mkdirp "0.5.1"
     supports-color "3.1.2"
 
+moment@2.x.x:
+  version "2.17.1"
+  resolved "http://registry.npm.taobao.org/moment/download/moment-2.17.1.tgz#fed9506063f36b10f066c8b59a144d7faebe1d82"
+
 mongodb-core@2.0.13:
   version "2.0.13"
   resolved "http://registry.npm.taobao.org/mongodb-core/download/mongodb-core-2.0.13.tgz#f9394b588dce0e579482e53d74dbc7d7a9d4519c"
@@ -1265,7 +1346,7 @@ mquery@2.0.0:
     regexp-clone "0.0.1"
     sliced "0.0.5"
 
-ms@0.7.1:
+ms@0.7.1, ms@^0.7.1:
   version "0.7.1"
   resolved "http://registry.npm.taobao.org/ms/download/ms-0.7.1.tgz#9cd13c03adbff25b65effde7ce864ee952017098"
 
@@ -1624,6 +1705,10 @@ rimraf@2, rimraf@~2.5.1, rimraf@~2.5.4:
   dependencies:
     glob "^7.0.5"
 
+safe-buffer@^5.0.1:
+  version "5.0.1"
+  resolved "http://registry.npm.taobao.org/safe-buffer/download/safe-buffer-5.0.1.tgz#d263ca54696cd8a306b5ca6551e92de57918fbe7"
+
 semver-diff@^2.0.0:
   version "2.1.0"
   resolved "http://registry.npm.taobao.org/semver-diff/download/semver-diff-2.1.0.tgz#4bbb8437c8d37e4b0cf1a68fd726ec6d645d6d36"
@@ -1827,6 +1912,12 @@ tmatch@^2.0.1:
   version "2.0.1"
   resolved "http://registry.npm.taobao.org/tmatch/download/tmatch-2.0.1.tgz#0c56246f33f30da1b8d3d72895abaf16660f38cf"
 
+topo@1.x.x:
+  version "1.1.0"
+  resolved "http://registry.npm.taobao.org/topo/download/topo-1.1.0.tgz#e9d751615d1bb87dc865db182fa1ca0a5ef536d5"
+  dependencies:
+    hoek "2.x.x"
+
 touch@1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/touch/download/touch-1.0.0.tgz#449cbe2dbae5a8c8038e30d71fa0ff464947c4de"
@@ -1894,6 +1985,10 @@ uuid@^3.0.0:
   version "3.0.1"
   resolved "http://registry.npm.taobao.org/uuid/download/uuid-3.0.1.tgz#6544bba2dfda8c1cf17e629a3a305e2bb1fee6c1"
 
+validator@^6.2.0:
+  version "6.2.0"
+  resolved "http://registry.npm.taobao.org/validator/download/validator-6.2.0.tgz#b2cccdc49ff0f4b8ee4e61dba2ddd3dde13f23e7"
+
 vary@~1.1.0:
   version "1.1.0"
   resolved "http://registry.npm.taobao.org/vary/download/vary-1.1.0.tgz#e1e5affbbd16ae768dd2674394b9ad3022653140"
@@ -1928,6 +2023,6 @@ xdg-basedir@^2.0.0:
   dependencies:
     os-homedir "^1.0.0"
 
-xtend@^4.0.0:
+xtend@^4.0.0, xtend@^4.0.1:
   version "4.0.1"
   resolved "http://registry.npm.taobao.org/xtend/download/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
