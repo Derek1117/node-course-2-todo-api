@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@types/bcryptjs@^2.3.30":
+  version "2.3.30"
+  resolved "http://registry.npm.taobao.org/@types/bcryptjs/download/@types/bcryptjs-2.3.30.tgz#4338303e69765a4ec918bcd98485cedcaa6541eb"
+
 "@types/body-parser@^0.0.33":
   version "0.0.33"
   resolved "http://registry.npm.taobao.org/@types/body-parser/download/@types/body-parser-0.0.33.tgz#33ca1498fc37e51c5df0c81cae34569e7041e025"
@@ -197,6 +201,10 @@ bcrypt-pbkdf@^1.0.0:
   resolved "http://registry.npm.taobao.org/bcrypt-pbkdf/download/bcrypt-pbkdf-1.0.0.tgz#3ca76b85241c7170bf7d9703e7b9aa74630040d4"
   dependencies:
     tweetnacl "^0.14.3"
+
+bcryptjs@^2.3.0:
+  version "2.3.0"
+  resolved "http://registry.npm.taobao.org/bcryptjs/download/bcryptjs-2.3.0.tgz#5826900cfef7abaf3425c72e4d464de509b8c2ec"
 
 binary-extensions@^1.0.0:
   version "1.7.0"
