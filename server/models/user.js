@@ -33,11 +33,13 @@ let UserSchema = new mongoose.Schema({
             }
         }]
 });
+
 UserSchema.methods.toJSON = function () {
     var user = this;
     var userObject = user.toObject();
     return _.pick(userObject, ['_id', 'email']);
 };
+
 UserSchema.methods.generateAuthToken = function () {
     var user = this;
     var access = 'auth';
@@ -49,8 +51,27 @@ UserSchema.methods.generateAuthToken = function () {
         access,
         token
     });
-    user.save().then(() => {
+
+    return user.save().then(() => {
         return token;
+    });
+};
+UserSchema.statics.findByToken = function (token) {
+    var User = this;
+    var decoded;
+    try {
+        decoded = jwt.verify(token, 'abc123');
+    }
+    catch (e) {
+        // return new Promise((resolve, rerject) => {
+        //     reject();
+        // })
+        return Promise.reject();
+    }
+    return User.findOne({
+        '_id': decoded._id,
+        'tokens.token': token,
+        'tokens.access': 'auth'
     });
 };
 let User = mongoose.model('User', UserSchema);
